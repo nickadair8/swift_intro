@@ -19,7 +19,7 @@ struct ContentView: View {
                     .cornerRadius(10.00)
                     .aspectRatio(contentMode: .fit)
                     .padding(.all)
-                Text("Puppies!")
+                Text("Puppies")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
