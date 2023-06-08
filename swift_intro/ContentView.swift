@@ -9,18 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("nick is the best")
+        
+        ZStack {
+            Color(.black)
+                .ignoresSafeArea()
+            VStack{
+                Image("puppy.img")
+                    .resizable()
+                    .cornerRadius(10.00)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all)
+                Text("Puppies!")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+            }
         }
-        .padding()
+        
+    
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }
+
